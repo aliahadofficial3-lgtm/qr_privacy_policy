@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy - QR Toolkit</title>
+  <meta name="description" content="Privacy Policy for QR Toolkit Android Application. Learn how we handle your data, permissions, and advertising disclosures." />
+  <style>
+    :root {
+      --primary: #4F46E5;
+      --primary-light: #6366F1;
+      --primary-dark: #3730A3;
+      --bg: #F8FAFC;
+      --surface: #FFFFFF;
+      --text: #0F172A;
+      --text-secondary: #475569;
+      --border: #E2E8F0;
+      --badge-bg: #EEF2FF;
+      --badge-text: #4338CA;
+      --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+      --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --primary: #818CF8;
+        --primary-light: #A5B4FC;
+        --primary-dark: #6366F1;
+        --bg: #0F172A;
+        --surface: #1E293B;
+        --text: #F8FAFC;
+        --text-secondary: #94A3B8;
+        --border: #334155;
+        --badge-bg: #312E81;
+        --badge-text: #E0E7FF;
+        --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font-family);
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      padding: 24px 16px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .header-card {
+      background: var(--surface);
+      border-radius: 20px;
+      padding: 36px 28px;
+      margin-bottom: 24px;
+      border: 1px solid var(--border);
+      box-shadow: var(--card-shadow);
+      text-align: center;
+    }
+
+    .app-icon {
+      width: 72px;
+      height: 72px;
+      border-radius: 18px;
+      background: linear-gradient(135deg, var(--primary) 0%, #06B6D4 100%);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 16px;
+      box-shadow: 0 8px 16px -4px rgba(79, 70, 229, 0.3);
+    }
+
+    .app-icon svg {
+      width: 40px;
+      height: 40px;
+      fill: #FFFFFF;
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 800;
+      margin-bottom: 8px;
+      color: var(--text);
+    }
+
+    .app-subtitle {
+      font-size: 1.1rem;
+      color: var(--primary);
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+
+    .meta-badge-group {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    .meta-badge {
+      display: inline-block;
+      padding: 6px 14px;
+      background-color: var(--badge-bg);
+      color: var(--badge-text);
+      font-size: 0.85rem;
+      font-weight: 600;
+      border-radius: 30px;
+    }
+
+    .summary-box {
+      background: linear-gradient(135deg, rgba(79, 70, 229, 0.08) 0%, rgba(6, 182, 212, 0.08) 100%);
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--primary);
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 24px;
+    }
+
+    .summary-box h3 {
+      font-size: 1.05rem;
+      margin-bottom: 8px;
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .section-card {
+      background: var(--surface);
+      border-radius: 16px;
+      padding: 28px;
+      margin-bottom: 20px;
+      border: 1px solid var(--border);
+      box-shadow: var(--card-shadow);
+    }
+
+    h2 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      margin-bottom: 14px;
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    h2 .section-number {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background-color: var(--badge-bg);
+      color: var(--badge-text);
+      font-size: 0.95rem;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    p {
+      color: var(--text-secondary);
+      font-size: 1rem;
+      margin-bottom: 14px;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    ul, ol {
+      margin-left: 20px;
+      margin-bottom: 14px;
+      color: var(--text-secondary);
+    }
+
+    li {
+      margin-bottom: 8px;
+      padding-left: 4px;
+    }
+
+    li strong {
+      color: var(--text);
+    }
+
+    .info-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      font-size: 0.95rem;
+    }
+
+    .info-table th, .info-table td {
+      border: 1px solid var(--border);
+      padding: 12px 14px;
+      text-align: left;
+    }
+
+    .info-table th {
+      background-color: var(--badge-bg);
+      color: var(--badge-text);
+      font-weight: 700;
+    }
+
+    .info-table td {
+      color: var(--text-secondary);
+    }
+
+    .code-snippet {
+      background: var(--bg);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: monospace;
+      font-size: 0.9rem;
+      color: var(--primary);
+      border: 1px solid var(--border);
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 500;
+      word-break: break-all;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .contact-card {
+      background: var(--surface);
+      border: 2px dashed var(--primary);
+      border-radius: 16px;
+      padding: 24px;
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .contact-card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 8px;
+      color: var(--text);
+    }
+
+    .contact-email {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background: var(--primary);
+      color: #FFFFFF !important;
+      border-radius: 30px;
+      font-weight: 600;
+      text-decoration: none;
+      box-shadow: 0 4px 10px -2px rgba(79, 70, 229, 0.4);
+    }
+
+    .contact-email:hover {
+      opacity: 0.95;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      padding: 20px 0;
+      color: var(--text-secondary);
+      font-size: 0.88rem;
+      border-top: 1px solid var(--border);
+    }
+
+    @media print {
+      body {
+        background: #FFFFFF;
+        color: #000000;
+        padding: 0;
+      }
+      .section-card, .header-card {
+        border: none;
+        box-shadow: none;
+        padding: 16px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Header -->
+    <header class="header-card">
+      <div class="app-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24">
+          <path d="M3 3h8v8H3V3zm2 2v4h4V5H5zm8-2h8v8h-8V3zm2 2v4h4V5h-4zM3 13h8v8H3v-8zm2 2v4h4v-4H5zm13-2h3v2h-3v-2zm-5 0h2v3h-2v-3zm3 3h2v2h-2v-2zm-3 2h3v3h-3v-3zm3 0h3v3h-3v-3z"/>
+        </svg>
+      </div>
+      <h1>Privacy Policy</h1>
+      <div class="app-subtitle">QR Toolkit for Android</div>
+      <p>Fast, secure, offline-first QR scanner &amp; custom QR code generator</p>
+
+      <div class="meta-badge-group">
+        <span class="meta-badge">Effective Date: September 25, 2026</span>
+        <span class="meta-badge">Last Updated: September 25, 2026</span>
+        <span class="meta-badge">Version 1.0.0</span>
+      </div>
+    </header>
+
+    <!-- Executive Summary -->
+    <div class="summary-box">
+      <h3>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink:0;">
+          <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-1 16l-4-4 1.41-1.41L11 14.17l6.59-6.59L19 9l-8 8z"/>
+        </svg>
+        Our Core Privacy Principle
+      </h3>
+      <p>
+        <strong>Your data belongs strictly to you.</strong> QR Toolkit is architected as an <strong>offline-first</strong> utility. We do not require accounts, we do not operate telemetry or user-tracking servers, and we never transmit your scanned or generated QR code content across the network.
+      </p>
+    </div>
+
+    <!-- Section 1: Overview -->
+    <section class="section-card">
+      <h2><span class="section-number">1</span> Overview &amp; Scope</h2>
+      <p>
+        This Privacy Policy explains how <strong>QR Toolkit</strong> ("the Application", "we", "us", or "our") handles user information when you download, install, or use our mobile application on Android devices.
+      </p>
+      <p>
+        By using QR Toolkit, you consent to the data practices described in this document. If you do not agree with any terms of this policy, please refrain from using the application.
+      </p>
+    </section>
+
+    <!-- Section 2: Data We Do NOT Collect -->
+    <section class="section-card">
+      <h2><span class="section-number">2</span> Information We Do NOT Collect</h2>
+      <p>
+        Unlike many online services, QR Toolkit does not collect, record, or transmit personal data to our own servers. Specifically:
+      </p>
+      <ul>
+        <li><strong>No Account Required:</strong> You do not need to register, log in, or provide an email, phone number, or name to use the app.</li>
+        <li><strong>No Content Transmission:</strong> The text, URLs, contact vCards, Wi-Fi credentials, or messages contained inside QR codes you scan or generate are processed strictly on your device.</li>
+        <li><strong>No First-Party Analytics or Tracking:</strong> We do not deploy proprietary tracking beacons, keystroke logging, or behavioral tracking algorithms.</li>
+      </ul>
+    </section>
+
+    <!-- Section 3: Android Device Permissions -->
+    <section class="section-card">
+      <h2><span class="section-number">3</span> Device Permissions &amp; How They Are Used</h2>
+      <p>
+        QR Toolkit only requests Android permissions strictly required to provide scanning and offline functionality. Here is full transparency regarding each permission:
+      </p>
+
+      <table class="info-table">
+        <thead>
+          <tr>
+            <th>Permission</th>
+            <th>Type</th>
+            <th>Purpose &amp; Data Handling</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>android.permission.CAMERA</strong></td>
+            <td>Runtime Permission</td>
+            <td>
+              Required solely to display the live camera viewfinder and detect QR codes/barcodes in real time using Google ML Kit on-device vision. 
+              <strong>Camera frames are analyzed locally in volatile memory and are immediately discarded. No video or photos are saved or uploaded.</strong>
+            </td>
+          </tr>
+          <tr>
+            <td><strong>android.permission.VIBRATE</strong></td>
+            <td>Normal Permission</td>
+            <td>
+              Used solely to trigger physical haptic feedback upon successful code detection. You can toggle this setting on or off in the Settings menu at any time.
+            </td>
+          </tr>
+          <tr>
+            <td><strong>Photo Picker (Zero-Permission)</strong></td>
+            <td>System Capability</td>
+            <td>
+              When you choose to scan a barcode from an image or embed a custom logo into a generated QR code, the app utilizes the native Android Photo Picker. The app only receives access to the specific image file selected by you, and processes it in local RAM.
+            </td>
+          </tr>
+          <tr>
+            <td><strong>android.permission.INTERNET &amp; ACCESS_NETWORK_STATE</strong></td>
+            <td>Normal Permissions</td>
+            <td>
+              Used by third-party advertising SDKs (Google Mobile Ads / AdMob) to load advertising banners and interstitials, and to verify network availability when you voluntarily tap an external URL.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Section 4: Third-Party Advertising (Google AdMob) -->
+    <section class="section-card">
+      <h2><span class="section-number">4</span> Third-Party Advertising &amp; Google AdMob</h2>
+      <p>
+        To support ongoing maintenance and feature development of QR Toolkit as a free utility, the application integrates <strong>Google AdMob</strong> (Google Mobile Ads SDK), provided by Google LLC.
+      </p>
+
+      <p>
+        <strong>AdMob Configuration Details:</strong>
+      </p>
+      <ul>
+        <li><strong>AdMob Application ID:</strong> <span class="code-snippet">ca-app-pub-3634478066839492~8876348621</span></li>
+        <li><strong>Banner Ad Unit:</strong> Displayed unobtrusively within non-interfering areas of the app.</li>
+        <li><strong>Interstitial Ad Unit:</strong> Displayed after successful actions (such as generating or scanning a code).</li>
+      </ul>
+
+      <p>
+        Google AdMob may collect and process pseudonymous information to serve and personalize ads, prevent fraud, and measure ad performance. Data collected by Google may include:
+      </p>
+      <ul>
+        <li><strong>Advertising Identifiers:</strong> Google Advertising ID (GAID) or similar device identifiers.</li>
+        <li><strong>Device Telemetry:</strong> Device model, operating system version, carrier, network connection type, and screen orientation.</li>
+        <li><strong>Coarse Location:</strong> Approximate location derived from your IP address.</li>
+        <li><strong>Diagnostic &amp; Performance Data:</strong> Crash logs, ad load latency, and interaction telemetry.</li>
+      </ul>
+
+      <p>
+        All processing by Google is governed by Google's Privacy Policy. We encourage you to review their practices:
+      </p>
+      <ul>
+        <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a></li>
+        <li><a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">How Google uses information from sites or apps that use their services</a></li>
+        <li><a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener noreferrer">Google AdMob Privacy and Security</a></li>
+      </ul>
+
+      <h3 style="font-size:1.1rem; margin:16px 0 8px 0; color:var(--text);">How to Opt Out of Personalized Advertising</h3>
+      <p>
+        You have direct control over advertising personalization on your Android device:
+      </p>
+      <ol>
+        <li>Open your Android device <strong>Settings</strong>.</li>
+        <li>Navigate to <strong>Google</strong> &rarr; <strong>Ads</strong> (or <strong>Privacy</strong> &rarr; <strong>Ads</strong>).</li>
+        <li>Tap <strong>Delete advertising ID</strong> or toggle <strong>Opt out of Ads Personalization</strong>.</li>
+      </ol>
+      <p>
+        Once opted out, you will still see ads, but they will be contextual rather than personalized based on your activity across other apps.
+      </p>
+    </section>
+
+    <!-- Section 5: Local Storage & User Data Control -->
+    <section class="section-card">
+      <h2><span class="section-number">5</span> Local Storage &amp; User Data Control</h2>
+      <p>
+        QR Toolkit uses an isolated, on-device SQLite database (Android Room) to store:
+      </p>
+      <ul>
+        <li>Your scan history (if enabled in Settings).</li>
+        <li>Your saved / bookmarked favorite QR codes.</li>
+        <li>Your application preferences (dark/light theme, haptic feedback, sound effects).</li>
+      </ul>
+
+      <p>
+        <strong>You retain total control over this data:</strong>
+      </p>
+      <ul>
+        <li><strong>Clear History at Any Time:</strong> Open <em>Settings &rarr; History &amp; Storage &rarr; Clear All History</em> to permanently purge all scan and creation records from the device database.</li>
+        <li><strong>Toggle History Saving:</strong> You can completely disable saving scan history in the Settings menu.</li>
+        <li><strong>Uninstalling the App:</strong> Deleting QR Toolkit from your Android device immediately and permanently deletes all sandboxed files and database records.</li>
+      </ul>
+    </section>
+
+    <!-- Section 6: Security -->
+    <section class="section-card">
+      <h2><span class="section-number">6</span> Security &amp; Safe Scanning</h2>
+      <p>
+        We take security seriously:
+      </p>
+      <ul>
+        <li><strong>Safe Link Previews:</strong> By default, QR Toolkit does not automatically open scanned web links. You can safely review the destination URL before choosing to visit it in your browser.</li>
+        <li><strong>Isolated App Sandbox:</strong> All data is stored within Android's sandboxed storage, inaccessible to other standard applications on your device.</li>
+        <li><strong>Local Processing:</strong> Machine learning inference for barcode detection is performed on-device by Google ML Kit, eliminating network interception risks.</li>
+      </ul>
+    </section>
+
+    <!-- Section 7: Children's Privacy -->
+    <section class="section-card">
+      <h2><span class="section-number">7</span> Children's Privacy</h2>
+      <p>
+        QR Toolkit is a general-purpose utility and is not directed towards children under the age of 13 (or the minimum legal age in your jurisdiction). We do not knowingly collect personal identifiable information from children.
+      </p>
+      <p>
+        If a parent or guardian becomes aware that a child has provided personal information to third-party ad networks through the app, please contact us immediately, and we will take appropriate measures.
+      </p>
+    </section>
+
+    <!-- Section 8: Changes to This Policy -->
+    <section class="section-card">
+      <h2><span class="section-number">8</span> Changes to This Privacy Policy</h2>
+      <p>
+        We may occasionally update this Privacy Policy to reflect app updates, legal requirements, or changes to advertising integrations.
+      </p>
+      <p>
+        Any updates will be posted on this page with an updated "Last Updated" date. The current version of this policy is always accessible within the application under <strong>Settings &rarr; About &amp; Support &rarr; Privacy Policy</strong>.
+      </p>
+    </section>
+
+    <!-- Section 9: Contact -->
+    <div class="contact-card">
+      <h3>Questions or Concerns?</h3>
+      <p>If you have any questions, feedback, or requests regarding this Privacy Policy or your data rights, please contact the developer directly:</p>
+      <p style="margin-top: 6px;"><strong>Developer / Publisher:</strong> QR Toolkit Team</p>
+      <a href="mailto:aliahadofficial3@gmail.com" class="contact-email">
+        Contact: aliahadofficial3@gmail.com
+      </a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2026 QR Toolkit. All rights reserved.</p>
+      <p style="margin-top:4px;">Crafted with privacy and performance in mind.</p>
+    </footer>
+  </div>
+
+</body>
+</html>
